@@ -1,17 +1,15 @@
-pip install joblib
-
 # import all the app dependencies
 import pandas as pd
 import numpy as np
 import streamlit as st
-import joblib
+import joblib as jb
 import matplotlib
 from IPython import get_ipython
 from PIL import Image
 
 # load the encoder and model object
-model = joblib.load("rta_model_deploy3.joblib")
-encoder = joblib.load("ordinal_encoder2.joblib")
+model = jb.load("rta_model_deploy3.joblib")
+encoder = jb.load("ordinal_encoder2.joblib")
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
